@@ -430,9 +430,9 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
       children: [
         TileLayer(
           urlTemplate: _mapType == MapType.normal
-              ? "http://tile.openstreetmap.org/{z}/{x}/{y}.png"
+              ? "https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"
               : 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.jpg',
-          userAgentPackageName: 'com.example.app',
+          userAgentPackageName: 'sbr.sisto.id',
         ),
         Stack(
           children: [
